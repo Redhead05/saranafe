@@ -27,6 +27,7 @@ src: url("../fonts/BalooChettan-Regular.ttf");
 @import url(jquery.fancybox.min.css);
 @import url(jquery-ui.css);
 @import url(nice-select.css);
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -228,6 +229,8 @@ button {
     /*background-image: url(../images/banner-bg.png);*/
     height: auto;
     background-size: 100%;
+    margin: 0; /* Adjust as needed */
+    padding: 0; /* Adjust as needed */
 }
 .bg-light {
     background-color: transparent !important;
@@ -588,7 +591,7 @@ a:hover {
 .fa-user:hover {
   color: #eee;
 }
-.temper_text{
+.temper_text a {
     width: 100%;
     float: left;
     font-size: 18px;
@@ -596,6 +599,9 @@ a:hover {
     text-transform: uppercase;
     font-weight: bold;
     padding-top: 35px;
+}
+.temper_text a:hover{
+   color: red;
 }
 .dololr_text{
     width: 100%;
@@ -843,7 +849,7 @@ a:hover {
 .contact_section {
     width: 100%;
     float: left;
-    background-image: url(../images/contact-bg.png);
+    /*background-image: url(../images/contact-bg.png);*/
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -1033,8 +1039,350 @@ li a {
     font-size: 15px; /* Adjust this value to the size you want */
 }
 
+/* Clearing floats */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* Mini reset, no margins, paddings or bullets */
+.menu,
+.submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+/* Main level */
+.menu {
+    margin: auto;
+    width: 900px;
+    /* http://www.red-team-design.com/horizontal-centering-using-css-fit-content-value */
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    /*width: fit-content;*/
+
+}
+
+.menu > li {
+    background: #34495e;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+}
+
+.menu li:hover {
+    background: #e74c3c;
+}
+
+.menu > li > a {
+    transform: skewX(-25deg);
+    padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+    position: absolute;
+    width: 200px;
+    left: 50%; margin-left: -100px;
+    transform: skewX(-25deg);
+    transform-origin: left top;
+}
+
+.submenu li {
+    background-color: #34495e;
+    position: relative;
+    overflow: hidden;
+}
+
+.submenu > li > a {
+    padding: 1em 2em;
+}
+
+.submenu > li::after {
+    content: '';
+    position: absolute;
+    top: -125%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .9);
+}
+
+/* Odd stuff */
+.submenu > li:nth-child(odd){
+    transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+    transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+    right: -50%;
+    transform: skewX(-25deg) rotate(3deg);
+}
+
+/* Even stuff */
+.submenu > li:nth-child(even){
+    transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+    transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+    left: -50%;
+    transform: skewX(25deg) rotate(3deg);
+}
+
+/* Show dropdown */
+.submenu,
+.submenu li {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.submenu li {
+    transition: .2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu > li:hover .submenu li:nth-child(even){
+    transform: skewX(25deg) translateX(15px);
+}
+
+.menu > li:hover .submenu li:nth-child(odd){
+    transform: skewX(-25deg) translateX(-15px);
+}
 
 
+/*whatsapp button*/
+* {
+    font-family: "Arial", sans-serif;
+}
 
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 40px;
+    right: 62px;
+    z-index: 9;
+}
 
+.btn-whatsapp {
+    background-color: #30bf39;
+    color: #fff;
+    border-radius: 100%;
+    transition: background-color .5s;
+    width: 60px!important;
+    height: 60px!important;
+    line-height: 70px;
+    position: relative!important;
+    display: block;
+    transform: none!important;
+    z-index: 9;
+    text-align: center;
+    box-shadow:
+            0 1px 2px rgba(0,0,0,0.07),
+            0 2px 4px rgba(0,0,0,0.07),
+            0 4px 8px rgba(0,0,0,0.07),
+            0 8px 16px rgba(0,0,0,0.07),
+            0 16px 32px rgba(0,0,0,0.07),
+            0 32px 64px rgba(0,0,0,0.07);
+}
 
+.btn-whatsapp:hover {
+    background-color: #53ca5b;
+}
+
+.whatsapp-fixed a.video-vemo-icon.btn-whatsapp i {
+    font-size: 32px;
+    color: #fff;
+    animation: sm-shake-animation linear 1.5s infinite;
+    animation-delay: 3s;
+}
+
+.rs-video .animate-border .video-vemo-icon:before {
+    content: "";
+    border: 2px solid #fff;
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    animation: zoomBig 3.25s linear infinite;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.rs-video .animate-border .video-vemo-icon:after {
+    content: "";
+    border: 2px solid #fff;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    animation: zoomBig 3.25s linear infinite;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.btn-whatsapp:after, .btn-whatsapp:before {
+    border: 2px solid #30bf39 !important;
+    width: 130px!important;
+    height: 130px!important;
+}
+
+.sm-red-dot {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 12px; height: 12px;
+    margin: 0 auto;
+    background: red;
+    transform: scale(0);
+    border-radius: 50%;
+    animation-name: notificationPoint;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+.quick-message {
+    position: absolute;
+    bottom: 4px;
+    right: 88px;
+    width: max-content;
+    border-radius: 0;
+    background: #393b39;
+}
+
+.line-up {
+    opacity: 0;
+    animation-name: anim-lineUp;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+.quick-message p {
+    line-height: 40px;
+    font-size: 15px;
+    padding: 4px 16px;
+    height: 40px;
+    position: relative;
+    color: #fff;
+    margin: 0;
+}
+
+.quick-message .seta-direita:before {
+    display: inline-block;
+    content: "";
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #393b39;
+    position: absolute;
+    bottom: 3px;
+    right: -30px;
+}
+
+#hover-message {
+    display: none;
+}
+
+.whatsapp-fixed:hover #hover-message {
+    display: block;
+}
+
+@keyframes zoomBig{
+    0%{transform:translate(-50%,-50%) scale(.5);opacity:1;border-width:3px}
+    40%{opacity:.5;border-width:2px}
+    65%{border-width:1px}100%{transform:translate(-50%,-50%) scale(1);opacity:0;border-width:1px}}
+
+@keyframes sm-shake-animation {
+    0% {
+        transform:rotate(0) scale(1) skew(0.017rad)
+    }
+    25% {
+        transform:rotate(0) scale(1) skew(0.017rad)
+    }
+    35% {
+        transform:rotate(-0.3rad) scale(1) skew(0.017rad)
+    }
+    45% {
+        transform:rotate(0.3rad) scale(1) skew(0.017rad)
+    }
+    55% {
+        transform:rotate(-0.3rad) scale(1) skew(0.017rad)
+    }
+    65% {
+        transform:rotate(0.3rad) scale(1) skew(0.017rad)
+    }
+    75% {
+        transform:rotate(0) scale(1) skew(0.017rad)
+    }
+    100% {
+        transform:rotate(0) scale(1) skew(0.017rad)
+    }
+}
+
+@keyframes notificationPoint {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@keyframes anim-lineUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+/*TAN SLA STA */
+
+/*multiple partner*/
+
+.icon_1 img {
+    border-radius: 50px / 50px;
+}
