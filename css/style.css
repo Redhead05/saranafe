@@ -43,7 +43,7 @@ html {
 body {
      color: #666666;
      font-size: 14px;
-     font-family:Poppins;
+     font-family:Arial, sans-serif;
      line-height: 1.80857;
      font-weight: normal;
      overflow-x: hidden;
@@ -470,6 +470,7 @@ button {
 .about_section{
     width: 100%;
     float: left;
+    background-image: url(../images/bg-1.png);
     background-color: #ffb607;
     height: auto;
     padding-bottom: 90px;
@@ -486,6 +487,7 @@ button {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 500;
+    animation-delay: 0.5s; /* this means the animation will start 0.5 seconds after the page loads */
 }
 .lorem_text {
     width: 100%;
@@ -494,11 +496,13 @@ button {
     color: #ffffff;
     margin-left: 0px;
     padding-top: 40px;
+    animation-delay: 1s; /* this means the animation will start 1 second after the page loads */
 }
 .read_bt1 {
     width: 30%;
     float: left;
     margin-top: 70px;
+    animation-delay: 1.5s;/* this means the animation will start 1.5 seconds after the page loads */
 }
 .read_bt1 a{
     width: 100%;
@@ -1385,4 +1389,23 @@ li a {
 
 .icon_1 img {
     border-radius: 50px / 50px;
+}
+/*slider aninmation image */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.image_1 img {
+    animation: slideDown 7s ease-out;
+}
+
+.about_text, .lorem_text, .read_bt1 {
+    animation-name: slideInFromLeft;
+    animation-duration: 2s; /* adjust this to make the animation faster or slower */
+    animation-fill-mode: both; /* this makes sure the animation stays at the final state when it's done */
 }
