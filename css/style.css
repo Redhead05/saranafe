@@ -1409,3 +1409,15 @@ li a {
     animation-duration: 2s; /* adjust this to make the animation faster or slower */
     animation-fill-mode: both; /* this makes sure the animation stays at the final state when it's done */
 }
+/*logo partner*/
+.partner-logo {
+    width: 100px;
+    margin: 30px;
+}
+
+/*section galleries*/
+.img-fluid, .small-galleries video {
+    width: 550px;
+    height: 240px;
+    object-fit: cover;
+}
