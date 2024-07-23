@@ -184,25 +184,37 @@
                <div class="row">
                   <!-- First row for images -->
                   <div class="col-md-4">
-                     <img src="images/sarana/_DSC0214.JPG" alt="Image 1" class="img-fluid">
+                     <a class="fancybox" href="images/sarana/_DSC0214.JPG">
+                        <img src="images/sarana/_DSC0214.JPG" alt="Image 1" class="img-fluid">
+                     </a>
                   </div>
                   <div class="col-md-4">
-                     <img src="images/sarana/_DSC0295.JPG" alt="Image 2" class="img-fluid">
+                     <a class="fancybox" href="images/sarana/_DSC0295.JPG">
+                        <img src="images/sarana/_DSC0295.JPG" alt="Image 2" class="img-fluid">
+                     </a>
                   </div>
                   <div class="col-md-4">
-                     <img src="images/sarana/_DSC0295.JPG" alt="Image 3" class="img-fluid">
+                     <a class="fancybox" href="images/sarana/_DSC0295.JPG">
+                        <img src="images/sarana/_DSC0295.JPG" alt="Image 3" class="img-fluid">
+                     </a>
                   </div>
                </div>
                <div class="row pt-5">
                   <!-- Second row for videos -->
                   <div class="col-md-4">
-                     <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/T_AmqX8Fklw">
+                        <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </a>
                   </div>
                   <div class="col-md-4">
-                     <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/T_AmqX8Fklw">
+                        <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </a>
                   </div>
                   <div class="col-md-4">
-                     <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/T_AmqX8Fklw">
+                        <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </a>
                   </div>
                </div>
             </div>
@@ -565,6 +577,14 @@
       <script src="js/custom.js"></script>
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+        <script>
+             $(document).ready(function() {
+                $(".fancybox").fancybox({
+                 openEffect: "none",
+                 closeEffect: "none"
+                });
+             });
+             </script>
    </body>
 </html>
