@@ -33,6 +33,9 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
    <!--whatsapp icon-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!--   glightbox-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 </head>
    <body>
          <!--   loading -->
@@ -59,7 +62,7 @@
          <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
             <div class="container">
                <a class="navbar-brand" href="index.html">
-                  <img src="images/logo/logoTAN.png" alt="Logo" style="width:240px;"
+                  <img src="images/logo/logoTAN.png" alt="Logo" style="width:240px;">
                </a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -67,10 +70,10 @@
                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav ml-auto">
                      <a class="nav-item nav-link active" href="#">Home</a>
-                     <a class="nav-item nav-link" href="#" id="staLink">Sarana Tirta Abadi</a>
-                     <a class="nav-item nav-link" href="#" id="saranaLintasArthaLink">Sarana Lintas Artha</a>
+                     <a class="nav-item nav-link " href="#" id="staLink">Sarana Tirta Abadi</a>
+                     <a class="nav-item nav-link " href="#" id="saranaLintasArthaLink">Sarana Lintas Artha</a>
                      <div class="nav-item dropdown">
-                        <a class="nav-item nav-link" href="SLA.html" id="saranaTAN" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-item nav-link " href="SLA.html" id="saranaTAN" role="button" aria-haspopup="true" aria-expanded="false">
                            Trimitra Agro Nusaindo
                            <i class="fas fa-angle-down"></i>
                         </a>
@@ -164,50 +167,53 @@
 <!--      </div>-->
       <!-- who section end -->
       <!-- services section start -->
-      <div class="who_section layout_paddingsla pt-5">
-         <div class="container">
-            <h1 class="services_taital">Gallerys</h1>
-            <p class="many_taital">There are many variations of passages of Lorem Ipsum </p>
-            <div class="services_section2 layout_paddingsla">
-               <div class="row">
-                  <!-- First row for images -->
-                  <div class="col-md-4">
-                     <a class="fancybox" href="images/sarana/_DSC0214.JPG">
-                        <img src="images/sarana/_DSC0214.JPG" alt="Image 1" class="img-fluid">
-                     </a>
+         <div class="who_section layout_paddingsla pt-5">
+            <div class="container">
+               <h1 class="services_taital">Gallerys</h1>
+               <p class="many_taital">There are many variations of passages of Lorem Ipsum </p>
+               <div class="services_section2 layout_paddingsla">
+                  <div class="row hover-effect">
+                     <!-- First row for images -->
+                     <div class="col-md-4">
+                        <a href="images/sarana/_DSC0214.JPG" class="glightbox" data-gallery="images-gallery">
+                           <img src="images/sarana/_DSC0214.JPG" alt="Image 1" class="img-fluid">
+                        </a>
+                     </div>
+                     <div class="col-md-4">
+                        <a href="images/sarana/_DSC0295.JPG" class="glightbox" data-gallery="images-gallery">
+                           <img src="images/sarana/_DSC0295.JPG" alt="Image 2" class="img-fluid">
+                        </a>
+                     </div>
+                     <div class="col-md-4">
+                        <a href="images/sarana/_DSC0295.JPG" class="glightbox" data-gallery="images-gallery">
+                           <img src="images/sarana/_DSC0295.JPG" alt="Image 3" class="img-fluid">
+                        </a>
+                     </div>
                   </div>
-                  <div class="col-md-4">
-                     <a class="fancybox" href="images/sarana/_DSC0295.JPG">
-                        <img src="images/sarana/_DSC0295.JPG" alt="Image 2" class="img-fluid">
-                     </a>
-                  </div>
-                  <div class="col-md-4">
-                     <a class="fancybox" href="images/sarana/_DSC0295.JPG">
-                        <img src="images/sarana/_DSC0295.JPG" alt="Image 3" class="img-fluid">
-                     </a>
-                  </div>
-               </div>
-               <div class="row pt-5">
-                  <!-- Second row for videos -->
-                  <div class="col-md-4">
-                     <a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/T_AmqX8Fklw">
-                        <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                     </a>
-                  </div>
-                  <div class="col-md-4">
-                     <a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/T_AmqX8Fklw">
-                        <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                     </a>
-                  </div>
-                  <div class="col-md-4">
-                     <a class="fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/T_AmqX8Fklw">
-                        <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                     </a>
+                  <div class="row pt-5 hover-effect">
+                     <!-- Second row for videos -->
+                     <div class="col-md-4">
+                        <a href="https://www.youtube.com/embed/T_AmqX8Fklw" class="glightbox" data-gallery="videos-gallery">
+                           <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </a>
+                     </div>
+                     <div class="col-md-4">
+                        <a href="https://www.youtube.com/embed/T_AmqX8Fklw" class="glightbox" data-gallery="videos-gallery">
+                           <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </a>
+                     </div>
+                     <div class="col-md-4">
+                        <a href="https://www.youtube.com/embed/T_AmqX8Fklw" class="glightbox" data-gallery="videos-gallery">
+                           <iframe class="img-fluid" src="https://www.youtube.com/embed/T_AmqX8Fklw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </a>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
+
+         <!-- test-->
+         <!-- /end test -->
       <!-- services section end -->
 
 
@@ -553,12 +559,19 @@
       <script src="js/jquery-3.0.0.min.js"></script>
       <script src="js/plugin.js"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+         <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+         <script src="js/custom.js"></script>
       <!-- javascript --> 
-      <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-      <script>
+         <script src="js/owl.carousel.js"></script>
+         <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <!-- Include jQuery and Fancybox CSS/JS -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+         <script>
          document.addEventListener("DOMContentLoaded", function() {
             window.addEventListener("scroll", function() {
                var navbar = document.querySelector('.custom-navbar');
@@ -595,6 +608,22 @@
                setTimeout(function() {
                   window.location.href = "STA.html";
                }, 3000); // ms
+            });
+         </script>
+         <!--    script galleries-->
+         <script>
+            $(document).ready(function() {
+               $(".fancybox").fancybox({
+                  openEffect: "none",
+                  closeEffect: "none"
+               });
+            });
+         </script>
+         <script>
+            document.addEventListener("DOMContentLoaded", function() {
+               const lightbox = GLightbox({
+                  selector: '.glightbox'
+               });
             });
          </script>
    </body>
