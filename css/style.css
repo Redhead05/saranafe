@@ -431,16 +431,17 @@ button {
     width: 100%;
     float: left;
     font-size: 36px;
-    color: white;
+    color: black;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    padding-top: 40px;
 }
 .many_taital{
     width: 100%;
     float: left;
     font-size: 16px;
-    color: white;
+    color: black;
     text-align: center;
     margin-left: 0px;
     margin-top: 10px;
@@ -914,7 +915,7 @@ a:hover {
     font-size: 18px;
     padding: 20px;
     margin-top: 25px;
-    border: 0px;
+    border: 1px solid #000; /* Added border to match the existing style */
     border-radius: 5px;
 }
 input.email-bt::placeholder {
@@ -1590,3 +1591,47 @@ li a {
 .gallery .gallery-item:hover img {
     transform: scale(1.1);
 }
+/*carrer*/
+/* Add this CSS to your stylesheet */
+.job-listing {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.job-listing img {
+    width: 379px;
+    height: 487px;
+    margin: 50px 0;
+}
+
+.job-listing h2 {
+    font-size: 1.5em;
+    margin-bottom: 1px;
+}
+
+.job-listing p {
+    font-size: 1em;
+    color: #666;
+    margin-left: auto;
+}
+
+/*style modal*/
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 50px;
+}
+
+.modal-body {
+    padding: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+

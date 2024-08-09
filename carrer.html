@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Portal</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   <!-- Material Symbols Outlined font -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <!--whatsapp icon-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+   <body>
+      <!--   loading -->
+         <div class="modal" tabindex="-1" role="dialog" id="loadingModal">
+            <div class="modal-dialog" role="document">
+                     <img id="loadingImage" src="images/sarana/loading_tan2.png" alt="Loading">
+            </div>
+         </div>
+      <!--   whatsapp-->
+         <div class="rs-video whatsapp-fixed">
+            <div class="animate-border">
+               <a alt="Whatsapp" class="video-vemo-icon btn-whatsapp" aria-label="WhatsApp" href="http://api.whatsapp.com/send?1=pt_BR&amp;phone=085236445449" target="_blank" rel="noopener noreferrer" onclick="gtag_report_conversion(undefined)"><i class="fab fa-whatsapp"></i>
+                  <div class="sm-red-dot"></div>
+               </a>
+            </div>
+         </div>
+      <!--end   whatsapp-->
+      <!-- header section start -->
+      <header style="position: fixed; top: 0; width: 100%; z-index: 100;">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+            <div class="container">
+               <a class="navbar-brand" href="index.html">
+                  <img src="images/logo/logohdsarana.png" alt="Logo" style="width:240px;">
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto">
+                     <a class="nav-item nav-link active" href="#">Home</a>
+                     <a class="nav-item nav-link" href="#" id="staLink">Sarana Tirta Abadi</a>
+                     <a class="nav-item nav-link" href="#" id="saranaLintasArthaLink">Sarana Lintas Artha</a>
+                     <div class="nav-item dropdown">
+                        <a class="nav-item nav-link" href="SLA.html" id="saranaTAN" role="button" aria-haspopup="true" aria-expanded="false">
+                           Trimitra Agro Nusaindo
+                           <i class="fas fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                           <a class="dropdown-item" href="#">Struktur Organisasi</a>
+                           <a class="dropdown-item" href="#">Legalitas</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!--start career -->
+      <div class="career_section layout_paddingsla pt-5">
+         <div class="container">
+            <h1 class="services_taital">Career Opportunities</h1>
+            <p class="many_taital">Explore our current job openings</p>
+            <div class="services_section2 layout_paddingsla">
+               <div class="row">
+                  <!-- Job Listing 1 -->
+                  <div class="col-md-4 hover-effect">
+                     <a href="#" class="job-listing" data-toggle="modal" data-target="#jobModal">
+                        <img src="/images/carrer/carrer-dummy1.jpg" alt="Job 1" class="img-fluid">
+                        <h2>Man Power</h2>
+                        <p>Butuh 5 Tahun Pengalaman, Integritas, Sopan , Rapi</p>
+                        <button class="primary" onclick="window.dialog.showModal();">Open Dialog</button>
+                     </a>
+                  </div>
+                  <!-- Job Listing 2 -->
+                  <div class="col-md-4 hover-effect">
+                     <a href="job2.html" class="job-listing">
+                        <img src="/images/carrer/carrer-dummy2.jpg" alt="Job 2" class="img-fluid">
+                        <h2>Pergudangan</h2>
+                        <p>Butuh 5 Tahun Pengalaman, Integritas, Sopan , Rapi</p>
+                     </a>
+                  </div>
+                  <!-- Job Listing 3 -->
+                  <div class="col-md-4 hover-effect">
+                     <a href="job3.html" class="job-listing">
+                        <img src="/images/carrer/carrer-dummy3.jpg" alt="Job 3" class="img-fluid">
+                        <h2>HRD</h2>
+                        <p>Butuh 5 Tahun Pengalaman, Integritas, Sopan , Rapi.</p>
+                     </a>
+                  </div>
+                  <div class="clearfix visible-md-block visible-lg-block"></div>
+                  <!-- Job Listing 4 -->
+                  <div class="col-md-4 hover-effect">
+                     <a href="job4.html" class="job-listing">
+                        <img src="/images/carrer/carrer-dummy1.jpg" alt="Job 4" class="img-fluid">
+                        <h2>Marketing</h2>
+                        <p>Butuh 3 Tahun Pengalaman, Kreatif, Komunikatif</p>
+                     </a>
+                  </div>
+                  <!-- Job Listing 5 -->
+                  <div class="col-md-4 hover-effect">
+                     <a href="job5.html" class="job-listing">
+                        <img src="/images/carrer/carrer-dummy2.jpg" alt="Job 5" class="img-fluid">
+                        <h2>IT Support</h2>
+                        <p>Butuh 2 Tahun Pengalaman, Menguasai Jaringan, Problem Solver</p>
+                     </a>
+                  </div>
+                  <!-- Job Listing 6 -->
+                  <div class="col-md-4 hover-effect">
+                     <a href="job6.html" class="job-listing">
+                        <img src="/images/carrer/carrer-dummy2.jpg" alt="Job 6" class="img-fluid">
+                        <h2>Finance</h2>
+                        <p>Butuh 4 Tahun Pengalaman, Teliti, Jujur</p>
+                     </a>
+                  </div>
+                  <div class="clearfix visible-md-block visible-lg-block"></div>
+                  <!-- Job Listing 7 -->
+                  <div class="col-md-4 hover-effect">
+                     <a href="job7.html" class="job-listing">
+                        <img src="/images/carrer/carrer-dummy1.jpg" alt="Job 7" class="img-fluid">
+                        <h2>Customer Service</h2>
+                        <p>Butuh 1 Tahun Pengalaman, Ramah, Sabar</p>
+                     </a>
+                  </div>
+                  <!-- Job Listing 8 -->
+                  <div class="col-md-4 hover-effect">
+                     <a href="job8.html" class="job-listing">
+                        <img src="/images/carrer/carrer-dummy3.jpg" alt="Job 8" class="img-fluid">
+                        <h2>Designer</h2>
+                        <p>Butuh 3 Tahun Pengalaman, Kreatif, Menguasai Software Desain</p>
+                     </a>
+                  </div>
+                  <!-- Job Listing 9 -->
+                  <div class="col-md-4 hover-effect">
+                     <a href="job9.html" class="job-listing">
+                        <img src="/images/carrer/carrer-dummy1.jpg" alt="Job 9" class="img-fluid">
+                        <h2>Project Manager</h2>
+                        <p>Butuh 6 Tahun Pengalaman, Leadership, Manajemen Proyek</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--end career -->
+      <!-- Modal Structure -->
+      <div class="modal fade" id="jobModal" tabindex="-1" role="dialog" aria-labelledby="jobModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="jobModalLabel">Apply for Job</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form id="jobApplicationForm">
+                     <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="email-bt" placeholder="Name" name="Name" id="name" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="email-bt" placeholder="Name" name="Name" id="email" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="cv">Upload CV</label>
+                        <input type="file" class="form-control-file" id="cv" required>
+                     </div>
+                     <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--   end modal listing   -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding pt-5">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="customer_text">INFORMATION</h1>
+                     Follow us on social media:
+                     <ul class="white-text">
+                        <li>
+                           <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/sarana/facebook.png" alt="Facebook"></a>
+                           <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/sarana/instagram.png" alt="Instagram"></a>
+                           <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/sarana/tik-tok.png" alt="Tiktok"></a>
+                           <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/sarana/twitter.png" alt="Twitter"></a>
+                        </li>
+                     </ul>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="customer_text">Sarana Tirta Abadi</h1>
+                  <ul class="white-text">
+                     <li><a href="page1.html">Struktur Orgnaisasi</a></li>
+                     <li><a href="page1.html">Legalitas</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="customer_text">Sarana Lintas Artha</h1>
+                  <ul class="white-text">
+                     <li><a href="page1.html">Struktur Orgnaisasi</a></li>
+                     <li><a href="page1.html">Legalitas</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="customer_text">Trimitra Agro Nusaindo</h1>
+                  <ul class="white-text">
+                     <li><a href="page1.html">Struktur Orgnaisasi</a></li>
+                     <li><a href="page1.html">Legalitas</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="input-group mb-3 pt-5">
+               <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+               <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2"><a href="#">Subscribe</a></span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--      <div class="container">-->
+      <!--         <p class="copyright_text bg-white">2023 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a> Distribution By <a href="https://themewagon.com">ThemeWagon</a></p>-->
+      <!--         </div>-->
+      <!--      </div>-->
+      <!--  footer section end -->
+      <!-- copyright section start -->
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+         <script>
+            document.addEventListener("DOMContentLoaded", function() {
+               window.addEventListener("scroll", function() {
+                  var navbar = document.querySelector('.custom-navbar');
+                  if (window.pageYOffset > 0) {
+                     navbar.classList.add('scrolled');
+                  } else {
+                     navbar.classList.remove('scrolled');
+                  }
+               });
+            });
+         </script>
+            <script>
+               document.getElementById('saranaTAN').addEventListener('click', function(event) {
+                  event.preventDefault();
+                  document.getElementById('loadingImage').src = 'images/sarana/loading_tan2.png';
+                  $('#loadingModal').modal('show');
+                  setTimeout(function() {
+                     window.location.href = "SLA.html";
+                  }, 3000); // ms
+               });
+               document.getElementById('saranaLintasArthaLink').addEventListener('click', function(event) {
+                  event.preventDefault();
+                  document.getElementById('loadingImage').src = 'images/sarana/loading_sla.png';
+                  $('#loadingModal').modal('show');
+                  setTimeout(function() {
+                     window.location.href = "SLA.html";
+                  }, 3000); // ms
+               });
+
+               document.getElementById('staLink').addEventListener('click', function(event) {
+                  event.preventDefault();
+                  document.getElementById('loadingImage').src = 'images/sarana/loading_STA.png';
+                  $('#loadingModal').modal('show');
+                  setTimeout(function() {
+                     window.location.href = "STA.html";
+                  }, 3000); // ms
+               });
+            </script>
+      <!--   start js modal -->
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            const jobListings = document.querySelectorAll('.job-listing');
+            const jobModal = new bootstrap.Modal(document.getElementById('jobModal'));
+
+            jobListings.forEach(listing => {
+               listing.addEventListener('click', function(event) {
+                  event.preventDefault();
+                  jobModal.show();
+               });
+            });
+
+            document.getElementById('jobApplicationForm').addEventListener('submit', function(event) {
+               event.preventDefault();
+               // Handle form submission logic here
+               alert('Form submitted!');
+               jobModal.hide();
+            });
+         });
+      </script>
+      <!--  end js modal -->
+
+   </body>
+</html>
