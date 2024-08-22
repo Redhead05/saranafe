@@ -1617,21 +1617,348 @@ li a {
 }
 
 /*style modal*/
-.modal-header {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+    --vs-primary: 29 92 255;
 }
 
-.modal-body {
+/*Dialog Styles*/
+dialog {
+    display: none;
+    padding: 1rem 3rem;
+    background: white;
+    max-width: 400px;
+    padding-top: 2rem;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+    animation: fadeIn 1s ease both;
+    &::backdrop {
+        animation: fadeIn 1s ease both;
+        background: rgb(255 255 255 / 40%);
+        z-index: 2;
+        backdrop-filter: blur(20px);
+    }
+    .x {
+        filter: grayscale(1);
+        border: none;
+        background: none;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        transition: ease filter, transform 0.3s;
+        cursor: pointer;
+        transform-origin: center;
+        &:hover {
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.3rem;
+        padding: 0.5rem 0;
+        a {
+            &:visited {
+                color: rgb(var(--vs-primary));
+            }
+        }
+    }
+}
+
+/*General Styles*/
+
+button.primary {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #fff !important;
+    background: rgb(var(--vs-primary) / 100%);
+    padding: 13px 25px;
+    border-radius: 17px;
+    transition: background-color 0.1s ease;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -10px rgb(var(--vs-primary) / 50%);
+    &:hover {
+        box-shadow: 0 20px 20px -10px rgb(var(--vs-primary) / 50%);
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Form Container */
+dialog#dialog {
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Form Elements */
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="tel"]:focus,
+form input[type="file"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Buttons */
+.dialog-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialog-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dialog-buttons button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.dialog-buttons button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.dialog-buttons button#cancelDialog {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.dialog-buttons button#cancelDialog:hover {
+    background-color: #c0392b;
+}
+
+/* Close Button */
+button#closeDialog {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+button#closeDialog:hover {
+    color: #e74c3c;
+}
+/*2 column on modal*/
+.dialog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 20px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-
-.modal-content {
     border-radius: 10px;
 }
 
 
+.dialog-left, .dialog-right {
+    width: 48%; /* Adjust the width of the columns */
+}
+
+.dialog-left h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.dialog-left p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.text-black-50 {
+    counter-reset: list-counter; /* Initialize the counter */
+}
+
+.text-black-50 li {
+    counter-increment: list-counter; /* Increment the counter */
+    list-style: none; /* Remove default list styling */
+    position: relative; /* Position the counter */
+}
+
+.text-black-50 li::before {
+    content: counter(list-counter) ". "; /* Display the counter value */
+    position: absolute; /* Position the counter value */
+    left: -2em; /* Adjust the position as needed */
+    color: black; /* Set the color of the counter */
+}
+.row {
+    margin: 15px;
+}
+
+/*gallery video*/
+.video-thumbnail {
+    position: relative;
+    display: inline-block;
+}
+
+.play-icon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-thumbnail:hover .play-icon-overlay {
+    opacity: 1;
+}
+/*search bar gallery*/
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    border-radius: 50px; /* Elliptical border */
+    overflow: hidden; /* Ensure the input fits within the border */
+    border: 1px solid #ccc; /* Optional: Add a border */
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Elliptical border */
+    font-size: 16px;
+    outline: none; /* Remove default outline */
+}
+
+.search-button:hover {
+    background-color: #e6a700;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.dropdown-ellipse {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px; /* Elliptical border */
+    font-size: 16px;
+    outline: none;
+    appearance: none; /* Remove default dropdown arrow */
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDE2IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgMUwxMCA2TDE1IDFNIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+') no-repeat right 10px center;
+    background-color: #fff;
+}
+
+/*legalitas view pdf*/
+.pdf-viewer-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dropdown-ellipse {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px; /* Elliptical border */
+    font-size: 16px;
+    outline: none;
+    appearance: none; /* Remove default dropdown arrow */
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDE2IDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEgMUwxMCA2TDE1IDFNIiBzdHJva2U9IiM2NjYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+') no-repeat right 10px center;
+    background-color: #fff;
+}
+
+.career_section {
+    margin-top: 100px; /* Adjust the value as needed */
+    margin-bottom: 600px; /* Adjust the value as needed */
+}
+
+
+/*test*/
+.custom-dropdown-container {
+    position: fixed;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-180%);
+}
+
+.custom-dropdown-toggle {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transform: rotate(-90deg);
+    transform-origin: left center;
+}
+
+.custom-dropdown-menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: -90px;
+    top: 0;
+    z-index: 1;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.custom-dropdown-menu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.custom-dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.custom-show {
+    display: flex;
+    flex-direction: column;
+}

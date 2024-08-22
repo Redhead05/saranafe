@@ -81,134 +81,22 @@
          </nav>
       </header>
       <!--start career -->
-      <div class="career_section layout_paddingsla pt-5">
-         <div class="container">
-            <h1 class="services_taital">Career Opportunities</h1>
-            <p class="many_taital">Explore our current job openings</p>
-            <div class="services_section2 layout_paddingsla">
-               <div class="row">
-                  <!-- Job Listing 1 -->
-                  <div class="col-md-4 hover-effect">
-                     <a href="#" class="job-listing">
-                        <img src="/images/carrer/carrer-dummy1.jpg" alt="Job 1" class="img-fluid">
-                        <h2>Man Power</h2>
-                        <p>Butuh 5 Tahun Pengalaman, Integritas, Sopan , Rapi</p>
-                     </a>
-                     <button class="primary" onclick="document.getElementById('dialog').showModal();">Open Dialog</button>
-                  </div>
-                  <!-- Job Listing 2 -->
-                  <div class="col-md-4 hover-effect">
-                     <a href="job2.html" class="job-listing">
-                        <img src="/images/carrer/carrer-dummy2.jpg" alt="Job 2" class="img-fluid">
-                        <h2>Pergudangan</h2>
-                        <p>Butuh 5 Tahun Pengalaman, Integritas, Sopan , Rapi</p>
-                     </a>
-                  </div>
-                  <!-- Job Listing 3 -->
-                  <div class="col-md-4 hover-effect">
-                     <a href="job3.html" class="job-listing">
-                        <img src="/images/carrer/carrer-dummy3.jpg" alt="Job 3" class="img-fluid">
-                        <h2>HRD</h2>
-                        <p>Butuh 5 Tahun Pengalaman, Integritas, Sopan , Rapi.</p>
-                     </a>
-                  </div>
-                  <div class="clearfix visible-md-block visible-lg-block"></div>
-                  <!-- Job Listing 4 -->
-                  <div class="col-md-4 hover-effect">
-                     <a href="job4.html" class="job-listing">
-                        <img src="/images/carrer/carrer-dummy1.jpg" alt="Job 4" class="img-fluid">
-                        <h2>Marketing</h2>
-                        <p>Butuh 3 Tahun Pengalaman, Kreatif, Komunikatif</p>
-                     </a>
-                  </div>
-                  <!-- Job Listing 5 -->
-                  <div class="col-md-4 hover-effect">
-                     <a href="job5.html" class="job-listing">
-                        <img src="/images/carrer/carrer-dummy2.jpg" alt="Job 5" class="img-fluid">
-                        <h2>IT Support</h2>
-                        <p>Butuh 2 Tahun Pengalaman, Menguasai Jaringan, Problem Solver</p>
-                     </a>
-                  </div>
-                  <!-- Job Listing 6 -->
-                  <div class="col-md-4 hover-effect">
-                     <a href="job6.html" class="job-listing">
-                        <img src="/images/carrer/carrer-dummy2.jpg" alt="Job 6" class="img-fluid">
-                        <h2>Finance</h2>
-                        <p>Butuh 4 Tahun Pengalaman, Teliti, Jujur</p>
-                     </a>
-                  </div>
-                  <div class="clearfix visible-md-block visible-lg-block"></div>
-                  <!-- Job Listing 7 -->
-                  <div class="col-md-4 hover-effect">
-                     <a href="job7.html" class="job-listing">
-                        <img src="/images/carrer/carrer-dummy1.jpg" alt="Job 7" class="img-fluid">
-                        <h2>Customer Service</h2>
-                        <p>Butuh 1 Tahun Pengalaman, Ramah, Sabar</p>
-                     </a>
-                  </div>
-                  <!-- Job Listing 8 -->
-                  <div class="col-md-4 hover-effect">
-                     <a href="job8.html" class="job-listing">
-                        <img src="/images/carrer/carrer-dummy3.jpg" alt="Job 8" class="img-fluid">
-                        <h2>Designer</h2>
-                        <p>Butuh 3 Tahun Pengalaman, Kreatif, Menguasai Software Desain</p>
-                     </a>
-                  </div>
-                  <!-- Job Listing 9 -->
-                  <div class="col-md-4 hover-effect">
-                     <a href="job9.html" class="job-listing">
-                        <img src="/images/carrer/carrer-dummy1.jpg" alt="Job 9" class="img-fluid">
-                        <h2>Project Manager</h2>
-                        <p>Butuh 6 Tahun Pengalaman, Leadership, Manajemen Proyek</p>
-                     </a>
-                  </div>
-               </div>
+         <div class="career_section layout_paddingsla pt-5">
+            <div class="pdf-selector-container" style="text-align: center; margin-bottom: 20px;">
+               <select id="pdfSelector" class="dropdown-ellipse align-content-center" style="margin-bottom: 20px;">
+                  <option value="https://pii.or.id/uploads/dummies.pdf">Dummies PDF</option>
+                  <option value="https://example.com/another.pdf">Another PDF</option>
+                  <option value="https://example.com/sample.pdf">Sample PDF</option>
+               </select>
+            </div>
+            <div class="pdf-viewer-container" style="text-align: center;">
+               <iframe src="https://pii.or.id/uploads/dummies.pdf" width="80%" height="700px" style="border: none;">
+                  This browser does not support PDFs. Please download the PDF to view it:
+                  <a href="https://pii.or.id/uploads/dummies.pdf">Download PDF</a>
+               </iframe>
             </div>
          </div>
-      </div>
       <!--end career -->
-      <!-- Modal Structure -->
-         <dialog id="dialog">
-            <div class="dialog-container">
-               <div class="dialog-left">
-                  <div class="job-listing">
-                     <h2>Software Engineer</h2>
-                     <p><strong>Job Description:</strong></p>
-                     <p>We are looking for a skilled Software Engineer to join our dynamic team. The ideal candidate will be responsible for developing high-quality applications, collaborating with cross-functional teams, and ensuring the performance and reliability of our software products.</p>
-
-                     <p><strong>Qualifications:</strong></p>
-                     <ul class="text-black-50">
-                        <li>Bachelor's degree in Computer Science, Engineering, or a related field.</li>
-                        <li>Proven experience as a Software Engineer or similar role.</li>
-                        <li>Strong knowledge of programming languages such as Java, Python, or C++.</li>
-                        <li>Experience with software development methodologies and tools.</li>
-                        <li>Excellent problem-solving skills and attention to detail.</li>
-                        <li>Ability to work independently and as part of a team.</li>
-                        <li>Good communication and interpersonal skills.</li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="dialog-right">
-                  <form method="dialog">
-                     <label for="name">Name:</label>
-                     <input type="text" id="name" name="name" required>
-
-                     <label for="phone">Phone Number (Indonesia):</label>
-                     <input type="tel" id="phone" name="phone" pattern="\+62[0-9]{9,13}" placeholder="+62" required>
-
-                     <label for="cv">Upload CV:</label>
-                     <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
-
-                     <div class="dialog-buttons">
-                        <button type="submit">Submit</button>
-                        <button type="button" id="cancelDialog">Cancel</button>
-                     </div>
-                  </form>
-               </div>
-            </div>
-            <button id="closeDialog" aria-label="close" class="x">❌</button>
-         </dialog>
-      <!--   end modal listing   -->
       <!-- footer section start -->
       <div class="footer_section layout_padding pt-5">
          <div class="container">
@@ -335,7 +223,11 @@
             document.getElementById('dialog').close();
          });
       </script>
-      <!--  end js modal -->
-
+      <script>
+         document.getElementById('pdfSelector').addEventListener('change', function() {
+            var iframe = document.querySelector('.pdf-viewer-container iframe');
+            iframe.src = this.value;
+         });
+      </script>
 </body>
 </html>

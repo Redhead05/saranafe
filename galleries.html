@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Portal</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   <!-- Material Symbols Outlined font -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <!--whatsapp icon-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!--   lightbox-->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.3.0/css/lightgallery-bundle.min.css" rel="stylesheet">
+</head>
+<body>
+<!--   loading -->
+<div class="modal" tabindex="-1" role="dialog" id="loadingModal">
+   <div class="modal-dialog" role="document">
+      <img id="loadingImage" src="images/sarana/loading_tan2.png" alt="Loading">
+   </div>
+</div>
+<!--   whatsapp-->
+<div class="rs-video whatsapp-fixed">
+   <div class="animate-border">
+      <a alt="Whatsapp" class="video-vemo-icon btn-whatsapp" aria-label="WhatsApp" href="http://api.whatsapp.com/send?1=pt_BR&amp;phone=085236445449" target="_blank" rel="noopener noreferrer" onclick="gtag_report_conversion(undefined)"><i class="fab fa-whatsapp"></i>
+         <div class="sm-red-dot"></div>
+      </a>
+   </div>
+</div>
+<!--end   whatsapp-->
+<!-- header section start -->
+<header style="position: fixed; top: 0; width: 100%; z-index: 100;">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+      <div class="container">
+         <a class="navbar-brand" href="index.html">
+            <img src="images/logo/logohdsarana.png" alt="Logo" style="width:240px;">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+               <a class="nav-item nav-link active" href="#">Home</a>
+               <a class="nav-item nav-link" href="#" id="staLink">Sarana Tirta Abadi</a>
+               <a class="nav-item nav-link" href="#" id="saranaLintasArthaLink">Sarana Lintas Artha</a>
+               <div class="nav-item dropdown">
+                  <a class="nav-item nav-link" href="SLA.html" id="saranaTAN" role="button" aria-haspopup="true" aria-expanded="false">
+                     Trimitra Agro Nusaindo
+                     <i class="fas fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="#">Struktur Organisasi</a>
+                     <a class="dropdown-item" href="#">Legalitas</a>
+                  </div>
+               </div>
+               <a class="nav-item nav-link active" href="#">Carrer</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+</header>
+<!-- banner section start -->
+      <!--start gelleries-->
+<div class="galleries layout_padding pt-10">
+   <div class="container">
+      <div class="search-bar">
+         <input type="text" class="search-input" placeholder="Search...">
+      </div>
+      <div class="dropdown-container">
+         <select class="dropdown-ellipse">
+            <option value="value1">Value 1</option>
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+         </select>
+      </div>
+      <div class="row">
+         <div class="col-md-4 hover-effect">
+            <a href="/images/sarana/test.jpg" data-lightbox="gallery" data-title="Image 1">
+               <img src="/images/sarana/test.jpg" class="img-fluid" alt="Image 1">
+            </a>
+         </div>
+         <div class="col-md-4 hover-effect">
+            <a href="/images/sarana/instagram.png" data-lightbox="gallery" data-title="Image 2">
+               <img src="/images/sarana/instagram.png" class="img-fluid" alt="Image 2">
+            </a>
+         </div>
+         <div class="col-md-4 hover-effect">
+            <a href="/images/sarana/twitter.png" data-lightbox="gallery" data-title="Image 3">
+               <img src="/images/sarana/twitter.png" class="img-fluid" alt="Image 3">
+            </a>
+         </div>
+         <div id="video-gallery" class="col-md-4 pt-5 hover-effect">
+            <a href="https://www.youtube.com/watch?v=sD8Yh8KYhzM&list=RDEMlbmCpYUaUbjmSngm1KxgfQ&start_radio=1" data-lg-size="1280-720" data-lg-video="true" data-sub-html="<h4>Video 1</h4>">
+               <div class="video-thumbnail">
+                  <img src="/images/sarana/test.jpg" class="img-fluid" alt="Video 1">
+                  <div class="play-icon-overlay">
+                     <i class="fas fa-play-circle"></i>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+   </div>
+</div>
+<!--end gelleries-->
+<!-- footer section start -->
+<div class="footer_section layout_padding pt-5">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-3 col-sm-6">
+            <h1 class="customer_text">INFORMATION</h1>
+            Follow us on social media:
+            <ul class="white-text">
+               <li>
+                  <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/sarana/facebook.png" alt="Facebook"></a>
+                  <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/sarana/instagram.png" alt="Instagram"></a>
+                  <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/sarana/tik-tok.png" alt="Tiktok"></a>
+                  <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/sarana/twitter.png" alt="Twitter"></a>
+               </li>
+            </ul>
+         </div>
+         <div class="col-lg-3 col-sm-6">
+            <h1 class="customer_text">Sarana Tirta Abadi</h1>
+            <ul class="white-text">
+               <li><a href="page1.html">Struktur Orgnaisasi</a></li>
+               <li><a href="page1.html">Legalitas</a></li>
+            </ul>
+         </div>
+         <div class="col-lg-3 col-sm-6">
+            <h1 class="customer_text">Sarana Lintas Artha</h1>
+            <ul class="white-text">
+               <li><a href="page1.html">Struktur Orgnaisasi</a></li>
+               <li><a href="page1.html">Legalitas</a></li>
+            </ul>
+         </div>
+         <div class="col-lg-3 col-sm-6">
+            <h1 class="customer_text">Trimitra Agro Nusaindo</h1>
+            <ul class="white-text">
+               <li><a href="page1.html">Struktur Orgnaisasi</a></li>
+               <li><a href="page1.html">Legalitas</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="input-group mb-3 pt-5">
+         <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+         <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2"><a href="#">Subscribe</a></span>
+         </div>
+      </div>
+   </div>
+</div>
+<!--      <div class="container">-->
+<!--         <p class="copyright_text bg-white">2023 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a> Distribution By <a href="https://themewagon.com">ThemeWagon</a></p>-->
+<!--         </div>-->
+<!--      </div>-->
+<!--  footer section end -->
+<!-- copyright section start -->
+<!-- copyright section end -->
+<!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript -->
+      <script src="js/owl.carousel.js"></script>
+      <!--for gallery-->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <!-- Include Lightbox CSS and JS from CDN -->
+      <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.3.0/lightgallery.umd.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.3.0/plugins/video/lg-video.umd.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+            window.addEventListener("scroll", function() {
+               var navbar = document.querySelector('.custom-navbar');
+               if (window.pageYOffset > 0) {
+                  navbar.classList.add('scrolled');
+               } else {
+                  navbar.classList.remove('scrolled');
+               }
+            });
+         });
+      </script>
+      <script>
+         document.getElementById('saranaTAN').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('loadingImage').src = 'images/sarana/loading_tan2.png';
+            $('#loadingModal').modal('show');
+            setTimeout(function() {
+               window.location.href = "SLA.html";
+            }, 3000); // ms
+         });
+         document.getElementById('saranaLintasArthaLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('loadingImage').src = 'images/sarana/loading_sla.png';
+            $('#loadingModal').modal('show');
+            setTimeout(function() {
+               window.location.href = "SLA.html";
+            }, 3000); // ms
+         });
+
+         document.getElementById('staLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('loadingImage').src = 'images/sarana/loading_STA.png';
+            $('#loadingModal').modal('show');
+            setTimeout(function() {
+               window.location.href = "STA.html";
+            }, 3000); // ms
+         });
+      </script>
+      <!--start galerri js-->
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            lightGallery(document.getElementById('video-gallery'), {
+               plugins: [lgVideo],
+               selector: 'a'
+            });
+         });
+      </script>
+</body>
+</html>
