@@ -155,7 +155,7 @@
                      <h2 class="furnitures_text stylish-heading">Furnitures</h2>
                      <p class="dummy_text dololr_text">There are many variations of passages of Lorem Ipsum available, but the</p>
                      <div class="read_bt_main">
-                        <div class="read_bt"><a href="#">Read More</a></div>
+                        <div class="read_bt primary" onclick="document.getElementById('furnitureDialog').showModal();"><a href="#">Read More</a></div>
                      </div>
                   </div>
                   <div class="col-lg-3 col-sm-6 hover-effect">
@@ -192,6 +192,26 @@
             </div>
          </div>
       </div>
+      <!-- modal -->
+      <dialog id="furnitureDialog">
+         <div class="dialog-container">
+            <div class="dialog-left">
+               <div class="job-listing">
+                  <img src="images/sarana/test.jpg" alt="Furniture Image" style="width:100%; height:auto; border-radius:10px;">
+               </div>
+            </div>
+            <div class="dialog-right">
+               <h2>Product List</h2>
+               <ul id="productList">
+                  <li><a href="path/to/image1.jpg">1: Description of product 1</a></li>
+                  <li><a href="path/to/image2.jpg">2: Description of product 2</a></li>
+                  <li><a href="path/to/image3.jpg">3: Description of product 3</a></li>
+                  <li><a href="path/to/image4.jpg">4: Description of product 4</a></li>
+               </ul>
+            </div>
+         </div>
+         <button id="closeFurnitureDialog" aria-label="close" class="x">❌</button>
+      </dialog>
       <!-- contact section start -->
       <div class="contact_section layout_padding pt-5">
          <div class="container">
@@ -330,5 +350,32 @@
                   this.classList.toggle('rotate');
                });
             </script>
+            <script>
+               const furnitureDialog = document.getElementById('furnitureDialog');
+               const closeFurnitureButton = document.getElementById('closeFurnitureDialog');
+
+               closeFurnitureButton.addEventListener('click', () => {
+               furnitureDialog.close();
+            });
+
+               furnitureDialog.addEventListener('close', () => {
+               furnitureDialog.style.display = 'none';
+            });
+
+               document.querySelectorAll('.primary').forEach(button => {
+               button.addEventListener('click', () => {
+                  furnitureDialog.style.display = 'block';
+                  furnitureDialog.showModal();
+               });
+            });
+
+               document.getElementById('cancelFurnitureDialog').addEventListener('click', function() {
+               furnitureDialog.close();
+            });
+
+               document.getElementById('closeFurnitureDialog').addEventListener('click', function() {
+               furnitureDialog.close();
+            });
+         </script>
    </body>
 </html>
